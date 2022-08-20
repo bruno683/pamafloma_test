@@ -1,0 +1,76 @@
+:root {
+    /* SCSS RGB */
+    --bluedark: rgba(68, 99, 168, 0.6);
+    --button: rgba(217, 60, 215, 1);
+    --lightBlue: rgba(82, 166, 207, 1);
+    --purpleDark: rgba(68, 39, 121, 1);
+    --mediumBlue: rgb(41, 54, 83);
+    --schwartz: rgb(17, 21, 73);
+    //=======================================================
+    --orangelight: rgb(214, 124, 38);
+    --navbar: rgba(214, 124, 38, 0.6);
+    --brown: rgb(99, 59, 20);
+    --brownshadow: rgba(48, 34, 19, 1);
+    --white: rgb(242, 242, 242);
+    --brownGrey: rgb(108, 73, 45);
+    --lightOrange: rgb(240, 164, 96);
+}
+
+
+@media screen and (min-width: 290px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        section {
+            height: 100%;
+            margin: auto;
+
+            h1 {
+                color: var(--lightOrange);
+            }
+
+            .section-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: justify;
+                border-radius: 2rem;
+                background-color: var(--mediumBlue);
+
+                .paragraph {
+                    padding: 0.8rem;
+                    
+                        .p-contact{
+                            width: 100%;
+                        text-align: center;
+                        p {
+                            color: var(--lightOrange);
+                        }
+                    }
+                   
+                    
+                }
+
+                .contact-button {
+                    padding: 0.5rem;
+                    transition: all 0.4s ease-in-out;
+
+
+                    a {
+                        button {
+                            background-color: green;
+                            border: none;
+                            border-radius: 0.5rem;
+
+                        }   
+                    }
+                }
+                
+            }
+        }
+    }
+}
