@@ -16,20 +16,14 @@
 }
 
 @media screen and (max-width: 1400px) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  main .section-troupe {
+  .section-troupe {
     height: 100%;
     margin: auto;
   }
-  main .section-troupe h1 {
+  .section-troupe h1 {
     color: var(--lightOrange);
   }
-  main .section-troupe .section-container {
+  .section-troupe .section-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,34 +31,35 @@
     text-align: justify;
     border-radius: 2rem;
     background-color: var(--mediumBlue);
+    margin-top: 2rem;
   }
-  main .section-troupe .section-container .paragraph {
+  .section-troupe .section-container .paragraph {
     padding: 0.8rem;
   }
-  main .section-troupe .section-container .paragraph .p-contact {
+  .section-troupe .section-container .paragraph .p-contact {
     width: 100%;
     text-align: center;
   }
-  main .section-troupe .section-container .paragraph .p-contact p {
+  .section-troupe .section-container .paragraph .p-contact p {
     color: var(--lightOrange);
   }
-  main .section-troupe .section-container .contact-button {
+  .section-troupe .section-container .contact-button {
     padding: 0.5rem;
     transition: all 0.4s ease-in-out;
   }
-  main .section-troupe .section-container .contact-button a button {
+  .section-troupe .section-container .contact-button a button {
     background-color: green;
     border: none;
     border-radius: 0.5rem;
   }
-  main .section-troupe .recrute #troupe-desktop {
+  .section-troupe .recrute #troupe-desktop {
     display: none;
   }
-  main .section-troupe .recrute #troupe-mobile {
+  .section-troupe .recrute #troupe-mobile {
     display: flex;
     margin: 2rem 0 2rem 0;
   }
-  main .section-troupe .recrute #troupe-mobile img {
+  .section-troupe .recrute #troupe-mobile img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
