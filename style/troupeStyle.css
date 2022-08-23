@@ -65,19 +65,37 @@
     border-radius: 1rem;
     margin-bottom: 2rem;
   }
+  .wall-of-fame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .wall-of-fame .photoDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 }
 @media screen and (min-width: 1401px) {
-  .section-troupe {
+  #troupe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #troupe .section-troupe {
     height: 80%;
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
   }
-  .section-troupe h1 {
+  #troupe .section-troupe h1 {
     color: var(--lightOrange);
   }
-  .section-troupe .section-container {
+  #troupe .section-troupe .section-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,45 +104,66 @@
     border-radius: 2rem;
     background-color: var(--mediumBlue);
   }
-  .section-troupe .section-container .paragraph {
+  #troupe .section-troupe .section-container .paragraph {
     padding: 0.8rem;
     width: 90%;
   }
-  .section-troupe .section-container .paragraph .p-contact {
+  #troupe .section-troupe .section-container .paragraph .p-contact {
     width: 100%;
     text-align: center;
   }
-  .section-troupe .section-container .paragraph .p-contact p {
+  #troupe .section-troupe .section-container .paragraph .p-contact p {
     color: var(--lightOrange);
   }
-  .section-troupe .section-container .contact-button {
+  #troupe .section-troupe .section-container .contact-button {
     padding: 0.5rem;
     transition: all 0.4s ease-in-out;
   }
-  .section-troupe .section-container .contact-button a button {
+  #troupe .section-troupe .section-container .contact-button a button {
     background-color: green;
     border: none;
     border-radius: 0.5rem;
   }
-  .section-troupe .recrute {
+  #troupe .section-troupe .recrute {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60%;
   }
-  .section-troupe .recrute #troupe-desktop {
+  #troupe .section-troupe .recrute #troupe-desktop {
     display: flex;
     margin: 2rem 0 2rem 0;
   }
-  .section-troupe .recrute #troupe-desktop img {
+  #troupe .section-troupe .recrute #troupe-desktop img {
     width: 600px;
     height: auto;
     margin: auto;
     border-radius: 1rem;
     margin-bottom: 2rem;
   }
-  .section-troupe .recrute #troupe-mobile {
+  #troupe .section-troupe .recrute #troupe-mobile {
     display: none;
+  }
+  #troupe .wall-of-fame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 10px solid gold;
+    border-radius: 2rem;
+  }
+  #troupe .wall-of-fame .photoDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2.3rem;
+    padding: 1.2rem;
+  }
+  #troupe .wall-of-fame .photoDisplay img {
+    max-height: 144px;
+    min-height: 126px;
+    width: auto;
   }
 }/*# sourceMappingURL=troupeStyle.css.map */

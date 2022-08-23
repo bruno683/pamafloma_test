@@ -18,11 +18,7 @@
 
 
 @media screen and (max-width: 1400px) {
-    // main {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     height: 100vh;
+    
 
         .section-troupe {
             height: 100%;
@@ -92,91 +88,132 @@
                 }
             }
         }
-    // }
+        .wall-of-fame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .photoDisplay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row wrap;
+            }
+        }
+    
 }
 
 @media screen and (min-width: 1401px) {
-    .section-troupe {
-        height: 80%;
-        width: 100%;
-        margin: auto;
+    #troupe {
         display: flex;
-        flex-direction: row ;
-
-
-        h1 {
-            color: var(--lightOrange);
-        }
-
-        .section-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .section-troupe {
+            height: 80%;
+            width: 100%;
+            margin: auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 50%;
-
-            border-radius: 2rem;
-            background-color: var(--mediumBlue);
-
-
-            .paragraph {
-                padding: 0.8rem;
-                width: 90%;
-
-                .p-contact {
-                    width: 100%;
-                    text-align: center;
-
-                    p {
-                        color: var(--lightOrange);
-                    }
-                }
-
-
+            flex-direction: row ;
+    
+    
+            h1 {
+                color: var(--lightOrange);
             }
-
-            .contact-button {
-                padding: 0.5rem;
-                transition: all 0.4s ease-in-out;
-
-
-                a {
-                    button {
-                        background-color: green;
-                        border: none;
-                        border-radius: 0.5rem;
-
-                    }
-                }
-            }
-
-        }
-
-        .recrute {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 60%;
-            #troupe-desktop {
+    
+            .section-container {
                 display: flex;
-                margin: 2rem 0 2rem 0;
-
-                img {
-                    width: 600px;
-                    height: auto;
-                    margin: auto;
-                    border-radius: 1rem;
-                    margin-bottom: 2rem;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 50%;
+    
+                border-radius: 2rem;
+                background-color: var(--mediumBlue);
+    
+    
+                .paragraph {
+                    padding: 0.8rem;
+                    width: 90%;
+    
+                    .p-contact {
+                        width: 100%;
+                        text-align: center;
+    
+                        p {
+                            color: var(--lightOrange);
+                        }
+                    }
+    
+    
+                }
+    
+                .contact-button {
+                    padding: 0.5rem;
+                    transition: all 0.4s ease-in-out;
+    
+    
+                    a {
+                        button {
+                            background-color: green;
+                            border: none;
+                            border-radius: 0.5rem;
+    
+                        }
+                    }
+                }
+    
+            }
+    
+            .recrute {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+                #troupe-desktop {
+                    display: flex;
+                    margin: 2rem 0 2rem 0;
+    
+                    img {
+                        width: 600px;
+                        height: auto;
+                        margin: auto;
+                        border-radius: 1rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+    
+                #troupe-mobile {
+                    display: none;
                 }
             }
-
-            #troupe-mobile {
-                display: none;
+    
+        }
+        .wall-of-fame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: 10px solid gold;
+            border-radius: 2rem;
+            .photoDisplay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row wrap;
+                gap: 2.3rem;
+                padding: 1.2rem;
+                img {
+                    max-height: 144px;
+                    min-height: 126px;
+                    width: auto;
+                }
+                
             }
         }
-
     }
+    
 }
    
 
