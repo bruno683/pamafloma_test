@@ -15,21 +15,21 @@
   --lightOrange: rgb(240, 164, 96);
 }
 
-@media screen and (min-width: 290px) {
+@media screen and (max-width: 1400px) {
   main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  main section {
+  main .section-troupe {
     height: 100%;
     margin: auto;
   }
-  main section h1 {
+  main .section-troupe h1 {
     color: var(--lightOrange);
   }
-  main section .section-container {
+  main .section-troupe .section-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,23 +38,98 @@
     border-radius: 2rem;
     background-color: var(--mediumBlue);
   }
-  main section .section-container .paragraph {
+  main .section-troupe .section-container .paragraph {
     padding: 0.8rem;
   }
-  main section .section-container .paragraph .p-contact {
+  main .section-troupe .section-container .paragraph .p-contact {
     width: 100%;
     text-align: center;
   }
-  main section .section-container .paragraph .p-contact p {
+  main .section-troupe .section-container .paragraph .p-contact p {
     color: var(--lightOrange);
   }
-  main section .section-container .contact-button {
+  main .section-troupe .section-container .contact-button {
     padding: 0.5rem;
     transition: all 0.4s ease-in-out;
   }
-  main section .section-container .contact-button a button {
+  main .section-troupe .section-container .contact-button a button {
     background-color: green;
     border: none;
     border-radius: 0.5rem;
+  }
+  main .section-troupe .recrute #troupe-desktop {
+    display: none;
+  }
+  main .section-troupe .recrute #troupe-mobile {
+    display: flex;
+    margin: 2rem 0 2rem 0;
+  }
+  main .section-troupe .recrute #troupe-mobile img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .section-troupe {
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .section-troupe h1 {
+    color: var(--lightOrange);
+  }
+  .section-troupe .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 2rem;
+    background-color: var(--mediumBlue);
+  }
+  .section-troupe .section-container .paragraph {
+    padding: 0.8rem;
+    width: 90%;
+  }
+  .section-troupe .section-container .paragraph .p-contact {
+    width: 100%;
+    text-align: center;
+  }
+  .section-troupe .section-container .paragraph .p-contact p {
+    color: var(--lightOrange);
+  }
+  .section-troupe .section-container .contact-button {
+    padding: 0.5rem;
+    transition: all 0.4s ease-in-out;
+  }
+  .section-troupe .section-container .contact-button a button {
+    background-color: green;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  .section-troupe .recrute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .section-troupe .recrute #troupe-desktop {
+    display: flex;
+    margin: 2rem 0 2rem 0;
+  }
+  .section-troupe .recrute #troupe-desktop img {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  .section-troupe .recrute #troupe-mobile {
+    display: none;
   }
 }/*# sourceMappingURL=troupeStyle.css.map */

@@ -17,14 +17,14 @@
 }
 
 
-@media screen and (min-width: 290px) {
+@media screen and (max-width: 1400px) {
     main {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
 
-        section {
+        .section-troupe {
             height: 100%;
             margin: auto;
 
@@ -43,16 +43,17 @@
 
                 .paragraph {
                     padding: 0.8rem;
-                    
-                        .p-contact{
-                            width: 100%;
+
+                    .p-contact {
+                        width: 100%;
                         text-align: center;
+
                         p {
                             color: var(--lightOrange);
                         }
                     }
-                   
-                    
+
+
                 }
 
                 .contact-button {
@@ -66,11 +67,118 @@
                             border: none;
                             border-radius: 0.5rem;
 
-                        }   
+                        }
                     }
                 }
-                
+
+            }
+
+            .recrute {
+                #troupe-desktop {
+                    display: none;
+                }
+
+                #troupe-mobile {
+                    display: flex;
+                    margin: 2rem 0 2rem 0;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 1rem;
+                        margin-bottom: 2rem;
+                    }
+                }
             }
         }
     }
 }
+
+@media screen and (min-width: 1401px) {
+    .section-troupe {
+        height: 80%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row ;
+
+
+        h1 {
+            color: var(--lightOrange);
+        }
+
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+
+            border-radius: 2rem;
+            background-color: var(--mediumBlue);
+
+
+            .paragraph {
+                padding: 0.8rem;
+                width: 90%;
+
+                .p-contact {
+                    width: 100%;
+                    text-align: center;
+
+                    p {
+                        color: var(--lightOrange);
+                    }
+                }
+
+
+            }
+
+            .contact-button {
+                padding: 0.5rem;
+                transition: all 0.4s ease-in-out;
+
+
+                a {
+                    button {
+                        background-color: green;
+                        border: none;
+                        border-radius: 0.5rem;
+
+                    }
+                }
+            }
+
+        }
+
+        .recrute {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            #troupe-desktop {
+                display: flex;
+                margin: 2rem 0 2rem 0;
+
+                img {
+                    width: 600px;
+                    height: auto;
+                    margin: auto;
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            #troupe-mobile {
+                display: none;
+            }
+        }
+
+    }
+}
+   
+
+    
+
+
