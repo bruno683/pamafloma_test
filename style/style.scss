@@ -380,61 +380,68 @@ html {
                         justify-items: center;
                         align-items: center;
                         flex-direction: column;
-
-                        .display-card {
+                        a {
+                            text-decoration: none;
                             display: flex;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            flex-flow: column;
-                            margin: 0.8rem 1.2rem 0.8rem 1.2rem;
-
-                            border-radius: 0.8rem;
-                            background-color: var(--mediumBlue);
                             width: 90%;
-                            transition: all 0.4s ease-in-out;
-                            box-shadow: 10px 10px 20px rgba(16, 7, 16, 0.4);
-
-                            .card-head {
-                                img {
-                                    border-radius: 0.8rem 0.8rem 0 0;
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-
-                            .card-body {
+                            .display-card {
                                 display: flex;
-                                justify-content: center;
+                                justify-content: space-evenly;
                                 align-items: center;
-                                flex-direction: column;
-                                padding: 0.9rem;
-
-                                .hr {
-                                    height: 2px;
-                                    width: 95%;
-                                    background-color: rgba(39, 32, 39, 0.9);
-                                    margin: 0.3rem;
+                                flex-flow: column;
+                                margin: 0.8rem 1.2rem 0.8rem 1.2rem;
+    
+                                border-radius: 0.8rem;
+                                background-color: var(--mediumBlue);
+                                width: 100%;
+                                transition: all 0.4s ease-in-out;
+                                box-shadow: 10px 10px 20px rgba(16, 7, 16, 0.4);
+    
+                                .card-head {
+                                    img {
+                                        border-radius: 0.8rem 0.8rem 0 0;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
                                 }
-
-                                p {
-                                    text-align: justify;
-                                    padding: 1.2rem;
+    
+                                .card-body {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    padding: 0.9rem;
+    
+                                    .hr {
+                                        height: 2px;
+                                        width: 95%;
+                                        background-color: rgba(39, 32, 39, 0.9);
+                                        margin: 0.3rem;
+                                    }
+    
+                                    p {
+                                        text-align: justify;
+                                        padding: 1.2rem;
+                                    }
+    
+                                    button {
+                                        margin: 0.5rem;
+                                    }
                                 }
-
-                                button {
-                                    margin: 0.5rem;
+    
+                                .btn {
+                                    background-color: var(--medium-red-violet);
                                 }
                             }
-
-                            .btn {
-                                background-color: var(--medium-red-violet);
-                            }
+    
+                            
                         }
-
-                        .display-card:hover {
+                        .a:hover {
                             transform: scale(1.05);
                             cursor: pointer;
                         }
+
+                        
 
                     }
 
@@ -582,16 +589,19 @@ html {
                         
                         a{
                             text-decoration: none;
-                            img {
+                            .img-mobile {
                                 width: 90px;
                                 height: 25px;
+                            }
+                            .img-desktop {
+                                display: none;
                             }
                         }
                     }
                     .separate {
                         width: 3px;
                         height: 66px;
-                        background-color: var(--schwartz);
+                        background-color: rgb(19, 18, 18);
                         border-radius: 0.2rem;
                     }
                     .mentions {
@@ -891,58 +901,65 @@ html {
                         justify-items: center;
                         align-items: center;
                         flex-direction: row;
-
-                        .display-card {
+                        a {
+                            text-decoration: none;
                             display: flex;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            flex-flow: column;
-                            margin: 0.8rem 1.2rem 0.8rem 1.2rem;
-
-                            border-radius: 0.8rem;
-                            background-color: var(--mediumBlue);
                             width: 30%;
-                            transition: all 0.4s ease-in-out;
-                            box-shadow: 10px 10px 20px rgba(16, 7, 16, 0.4);
 
-                            .card-head {
-                                img {
-                                    border-radius: 0.8rem 0.8rem 0 0;
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
 
-                            .card-body {
+                            .display-card {
                                 display: flex;
-                                justify-content: center;
+                                justify-content: space-evenly;
                                 align-items: center;
-                                flex-direction: column;
-                                padding: 0.9rem;
-
-                                .hr {
-                                    height: 2px;
-                                    width: 95%;
-                                    background-color: rgba(39, 32, 39, 0.9);
-                                    margin: 0.3rem;
+                                flex-flow: column;
+                                margin: 0.8rem 1.2rem 0.8rem 1.2rem;
+    
+                                border-radius: 0.8rem;
+                                background-color: var(--mediumBlue);
+                                width: 100%;
+                                transition: all 0.4s ease-in-out;
+                                box-shadow: 10px 10px 20px rgba(16, 7, 16, 0.4);
+    
+                                .card-head {
+                                    img {
+                                        border-radius: 0.8rem 0.8rem 0 0;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
                                 }
-
-                                p {
-                                    text-align: justify;
-                                    padding: 1.2rem;
+    
+                                .card-body {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    padding: 0.9rem;
+    
+                                    .hr {
+                                        height: 2px;
+                                        width: 95%;
+                                        background-color: rgba(39, 32, 39, 0.9);
+                                        margin: 0.3rem;
+                                    }
+    
+                                    p {
+                                        text-align: justify;
+                                        padding: 1.2rem;
+                                    }
+    
+                                    button {
+                                        margin: 0.5rem;
+                                    }
                                 }
-
-                                button {
-                                    margin: 0.5rem;
+    
+                                .btn {
+                                    background-color: var(--medium-red-violet);
                                 }
-                            }
-
-                            .btn {
-                                background-color: var(--medium-red-violet);
                             }
                         }
+                        
 
-                        .display-card:hover {
+                        .a:hover {
                             transform: scale(1.05);
                             cursor: pointer;
                         }
@@ -954,6 +971,7 @@ html {
                 aside {
                     height: 1590px;
                     margin-top: 5rem;
+                    margin-bottom: 5rem;
                     flex: 1;
                     text-align: center;
 
@@ -975,6 +993,7 @@ html {
 
                     .card-actu {
                         background-color: var(--purpleDark);
+                        max-height: 100%;
                         border-radius: 0.8rem;
                         box-shadow: 10px 10px 20px rgba(9, 13, 31, 0.9);
 
@@ -1029,7 +1048,7 @@ html {
                                 border: none;
 
                                 img {
-                                    width: 100%;
+                                    width: 50%;
                                     height: auto;
                                     border-radius: 0.5rem;
                                     padding: 2rem 0 2rem 0;
@@ -1055,6 +1074,84 @@ html {
                     }
 
                 }
+                footer {
+                    width: 100vw;
+                    height: 20%;
+                    background-color: rgb(33, 33, 39);
+                    font-size: smaller;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2rem;
+                    padding: 0.3rem;
+                    
+                    
+    
+                    .footer-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 90%;
+                        
+                        .footer-logo {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0.6rem;
+                            padding-bottom: 0;
+                            
+                            a{
+                                text-decoration: none;
+                                .img-mobile {
+                                    display: none;
+                                }
+                                img .img-desktop {
+                                    width: 500px;
+                                    height: 75px;
+                                }
+                            }
+                        }
+                        .separate {
+                            width: 3px;
+                            height: 66px;
+                            background-color: rgb(19, 18, 18);
+                            border-radius: 0.2rem;
+                        }
+                        .mentions {
+                            display: block;
+                           
+    
+                            ul  {
+                                list-style: none;
+                                padding: 0.6rem;
+                                margin: 0;
+                                li{
+                                    a{
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+                                }
+    
+                            }
+                        }
+                        .contact-pama {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            font-size: smaller;
+                            padding-left: 0.5rem;
+                            margin: 0;
+                            a {
+                                text-decoration: none;
+                                text-align: center;
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+    
             }
         }
     }
