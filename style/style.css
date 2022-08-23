@@ -677,16 +677,16 @@ html body {
     width: 90%;
     margin: auto;
   }
-  html body main section {
+  html body main .section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 2.23rem;
+    margin-top: 2.8rem;
     flex: 2;
   }
-  html body main section .presentation {
+  html body main .section .presentation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -697,37 +697,38 @@ html body {
     border-radius: 0.8rem;
     box-shadow: 10px 10px 20px rgba(9, 13, 31, 0.9);
   }
-  html body main section .presentation .content {
+  html body main .section .presentation .content {
     text-align: justify;
     padding: 1.2rem;
     color: var(--brown);
   }
-  html body main section .presentation .content ul li {
+  html body main .section .presentation .content ul li {
     color: var(--white);
     font-family: "Poppins", sans sans-serif;
   }
-  html body main section .h2-section {
+  html body main .section .h2-section {
     color: var(--white);
     text-align: center;
   }
-  html body main section .hr {
+  html body main .section .hr {
     height: 2px;
     width: 95%;
     background-color: rgba(39, 32, 39, 0.9);
     margin: 0.3rem;
   }
-  html body main section .card-container {
+  html body main .section .card-container {
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: row;
   }
-  html body main section .card-container a {
+  html body main .section .card-container a {
     text-decoration: none;
     display: flex;
     width: 30%;
+    transition: all 0.4s ease-in-out;
   }
-  html body main section .card-container a .display-card {
+  html body main .section .card-container a .display-card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -739,35 +740,35 @@ html body {
     transition: all 0.4s ease-in-out;
     box-shadow: 10px 10px 20px rgba(16, 7, 16, 0.4);
   }
-  html body main section .card-container a .display-card .card-head img {
+  html body main .section .card-container a .display-card .card-head img {
     border-radius: 0.8rem 0.8rem 0 0;
     width: 100%;
     height: 100%;
   }
-  html body main section .card-container a .display-card .card-body {
+  html body main .section .card-container a .display-card .card-body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0.9rem;
   }
-  html body main section .card-container a .display-card .card-body .hr {
+  html body main .section .card-container a .display-card .card-body .hr {
     height: 2px;
     width: 95%;
     background-color: rgba(39, 32, 39, 0.9);
     margin: 0.3rem;
   }
-  html body main section .card-container a .display-card .card-body p {
+  html body main .section .card-container a .display-card .card-body p {
     text-align: justify;
     padding: 1.2rem;
   }
-  html body main section .card-container a .display-card .card-body button {
+  html body main .section .card-container a .display-card .card-body button {
     margin: 0.5rem;
   }
-  html body main section .card-container a .display-card .btn {
+  html body main .section .card-container a .display-card .btn {
     background-color: var(--medium-red-violet);
   }
-  html body main section .card-container .a:hover {
+  html body main .section .card-container .a:hover {
     transform: scale(1.05);
     cursor: pointer;
   }

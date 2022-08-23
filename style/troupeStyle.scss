@@ -18,89 +18,115 @@
 
 
 @media screen and (max-width: 1400px) {
-    
-
-        .section-troupe {
-            height: 100%;
-            margin: auto;
-
-            h1 {
-                color: var(--lightOrange);
-            }
-
-            .section-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                text-align: justify;
-                border-radius: 2rem;
-                background-color: var(--mediumBlue);
-                margin-top: 2rem;
-
-                .paragraph {
-                    padding: 0.8rem;
-
-                    .p-contact {
-                        width: 100%;
-                        text-align: center;
-
-                        p {
-                            color: var(--lightOrange);
-                        }
-                    }
 
 
-                }
+    .section-troupe {
+        height: 100%;
+        margin: auto;
 
-                .contact-button {
-                    padding: 0.5rem;
-                    transition: all 0.4s ease-in-out;
-
-
-                    a {
-                        button {
-                            background-color: green;
-                            border: none;
-                            border-radius: 0.5rem;
-
-                        }
-                    }
-                }
-
-            }
-
-            .recrute {
-                #troupe-desktop {
-                    display: none;
-                }
-
-                #troupe-mobile {
-                    display: flex;
-                    margin: 2rem 0 2rem 0;
-
-                    img {
-                        width: 100%;
-                        height: auto;
-                        border-radius: 1rem;
-                        margin-bottom: 2rem;
-                    }
-                }
-            }
+        h1 {
+            color: var(--lightOrange);
         }
-        .wall-of-fame {
+
+        .section-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            .photoDisplay {
+            flex-direction: column;
+            text-align: justify;
+            border-radius: 2rem;
+            background-color: var(--mediumBlue);
+            margin-top: 2rem;
+            padding: 0.8rem;
+
+            .paragraph {
+                padding: 0.8rem;
+                .troupe-title{
+                    text-align: center;
+                }
+
+                .p-contact {
+                    width: 100%;
+                    text-align: center;
+
+                    p {
+                        color: var(--lightOrange);
+                    }
+                }
+
+
+            }
+
+            .contact-button {
+
+                padding: 0.5rem;
+                text-align: center;
+                transition: all 0.4s ease-in-out;
+
+
+                a {
+
+                    button {
+                        width: 100px;
+                        height: 50px;
+                        background-color: green;
+                        border: none;
+                        border-radius: 0.5rem;
+                        color: antiquewhite;
+
+                    }
+                }
+            }
+
+        }
+
+        .recrute {
+            #troupe-desktop {
+                display: none;
+            }
+
+            #troupe-mobile {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-flow: row wrap;
+                // margin: 2rem 0 2rem 0;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 1rem;
+                    margin-bottom: 2rem;
+                }
             }
         }
-    
+    }
+
+    .wall-of-fame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .photoDisplay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            gap: 1.3rem;
+            padding: 1.2rem;
+            width: 98%;
+            padding: 0.5rem;
+            background-color: rgb(76, 68, 122);
+            border-radius: 2rem;
+            border: 3px solid rgb(94, 82, 160);
+
+            img {
+                max-height: 130px;
+                min-height: 120px;
+                width: auto;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1401px) {
@@ -109,72 +135,85 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         .section-troupe {
             height: 80%;
             width: 100%;
             margin: auto;
             display: flex;
-            flex-direction: row ;
-    
-    
+            flex-direction: row;
+            margin-top: 2.3rem;
+
+
             h1 {
                 color: var(--lightOrange);
             }
-    
+
             .section-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                width: 50%;
-    
+                flex-direction: row;
+                padding: 2rem;
+                width: 90%;
+
                 border-radius: 2rem;
                 background-color: var(--mediumBlue);
-    
-    
+
+
                 .paragraph {
+
                     padding: 0.8rem;
                     width: 90%;
-    
+
+                    #troupe-title {
+                        text-align: center;
+                        padding-bottom: 2rem;
+                    }
+
                     .p-contact {
                         width: 100%;
                         text-align: center;
-    
+
                         p {
                             color: var(--lightOrange);
                         }
                     }
-    
-    
+
+
                 }
-    
+
                 .contact-button {
                     padding: 0.5rem;
                     transition: all 0.4s ease-in-out;
-    
-    
+                    text-align: center;
+
+
                     a {
                         button {
-                            background-color: green;
+                            width: 150px;
+                            height: 75px;
+                            background-color: rgb(13, 87, 148);
                             border: none;
                             border-radius: 0.5rem;
-    
+
                         }
                     }
                 }
-    
+
             }
-    
+
             .recrute {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 width: 60%;
+
                 #troupe-desktop {
                     display: flex;
                     margin: 2rem 0 2rem 0;
-    
+
                     img {
                         width: 600px;
                         height: auto;
@@ -183,20 +222,23 @@
                         margin-bottom: 2rem;
                     }
                 }
-    
+
                 #troupe-mobile {
                     display: none;
                 }
             }
-    
+
         }
+
         .wall-of-fame {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            border: 10px solid gold;
+            flex-direction: column;
+            width: 80%;
+            border: 10px solid rgb(13, 87, 148);
             border-radius: 2rem;
+
             .photoDisplay {
                 display: flex;
                 justify-content: center;
@@ -204,19 +246,15 @@
                 flex-flow: row wrap;
                 gap: 2.3rem;
                 padding: 1.2rem;
+
                 img {
                     max-height: 144px;
                     min-height: 126px;
                     width: auto;
                 }
-                
+
             }
         }
     }
-    
+
 }
-   
-
-    
-
-

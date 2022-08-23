@@ -32,9 +32,13 @@
     border-radius: 2rem;
     background-color: var(--mediumBlue);
     margin-top: 2rem;
+    padding: 0.8rem;
   }
   .section-troupe .section-container .paragraph {
     padding: 0.8rem;
+  }
+  .section-troupe .section-container .paragraph .troupe-title {
+    text-align: center;
   }
   .section-troupe .section-container .paragraph .p-contact {
     width: 100%;
@@ -45,19 +49,22 @@
   }
   .section-troupe .section-container .contact-button {
     padding: 0.5rem;
+    text-align: center;
     transition: all 0.4s ease-in-out;
   }
   .section-troupe .section-container .contact-button a button {
+    width: 100px;
+    height: 50px;
     background-color: green;
     border: none;
     border-radius: 0.5rem;
+    color: antiquewhite;
   }
   .section-troupe .recrute #troupe-desktop {
     display: none;
   }
   .section-troupe .recrute #troupe-mobile {
     display: flex;
-    margin: 2rem 0 2rem 0;
   }
   .section-troupe .recrute #troupe-mobile img {
     width: 100%;
@@ -69,6 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
   }
   .wall-of-fame .photoDisplay {
@@ -76,6 +84,18 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    gap: 1.3rem;
+    padding: 1.2rem;
+    width: 98%;
+    padding: 0.5rem;
+    background-color: rgb(76, 68, 122);
+    border-radius: 2rem;
+    border: 3px solid rgb(94, 82, 160);
+  }
+  .wall-of-fame .photoDisplay img {
+    max-height: 130px;
+    min-height: 120px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1401px) {
@@ -91,6 +111,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+    margin-top: 2.3rem;
   }
   #troupe .section-troupe h1 {
     color: var(--lightOrange);
@@ -99,14 +120,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    padding: 2rem;
+    width: 90%;
     border-radius: 2rem;
     background-color: var(--mediumBlue);
   }
   #troupe .section-troupe .section-container .paragraph {
     padding: 0.8rem;
     width: 90%;
+  }
+  #troupe .section-troupe .section-container .paragraph #troupe-title {
+    text-align: center;
+    padding-bottom: 2rem;
   }
   #troupe .section-troupe .section-container .paragraph .p-contact {
     width: 100%;
@@ -118,9 +144,12 @@
   #troupe .section-troupe .section-container .contact-button {
     padding: 0.5rem;
     transition: all 0.4s ease-in-out;
+    text-align: center;
   }
   #troupe .section-troupe .section-container .contact-button a button {
-    background-color: green;
+    width: 150px;
+    height: 75px;
+    background-color: rgb(13, 87, 148);
     border: none;
     border-radius: 0.5rem;
   }
@@ -149,8 +178,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    border: 10px solid gold;
+    flex-direction: column;
+    width: 80%;
+    border: 10px solid rgb(13, 87, 148);
     border-radius: 2rem;
   }
   #troupe .wall-of-fame .photoDisplay {
