@@ -1,0 +1,84 @@
+:root {
+  /* SCSS RGB */
+  --bluedark: rgba(68, 99, 168, 0.6);
+  --button: rgba(217, 60, 215, 1);
+  --lightBlue: rgba(82, 166, 207, 1);
+  --purpleDark: rgba(68, 39, 121, 1);
+  --mediumBlue: rgb(41, 54, 83);
+  --schwartz: rgb(17, 21, 73);
+  --orangelight: rgb(214, 124, 38);
+  --navbar: rgba(214, 124, 38, 0.6);
+  --brown: rgb(99, 59, 20);
+  --brownshadow: rgba(48, 34, 19, 1);
+  --white: rgb(242, 242, 242);
+  --brownGrey: rgb(108, 73, 45);
+  --lightOrange: rgb(240, 164, 96);
+}
+
+@media screen and (max-width: 1400px) {
+  .main-resa {
+    width: 100%;
+    height: auto;
+  }
+  .main-resa .announces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .main-resa .announces ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+  .main-resa .announces ul li {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-resa .announces ul li h5 {
+    text-align: center;
+  }
+  .main-resa .announces ul li img {
+    width: 250px;
+    height: auto;
+    padding: 0.9rem 0 0.9rem 0;
+  }
+  .main-resa .announces ul li .resa_btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 3rem;
+    background-color: var(--button);
+    border: none;
+    border-radius: 0.6rem;
+  }
+  .main-resa .announces ul li .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    border: 3px solid rgb(66, 88, 134);
+  }
+  .main-resa .announces ul li .iframe iframe {
+    width: 100%;
+    height: auto;
+  }
+  .main-resa .announces .hr-separate {
+    width: 75%;
+    height: 3px;
+    background-color: rgb(198, 228, 228);
+  }
+}/*# sourceMappingURL=reservation.css.map */
