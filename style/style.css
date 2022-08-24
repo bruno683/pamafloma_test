@@ -445,7 +445,6 @@ html body {
     max-width: fit-content;
   }
   html body footer {
-    width: 100vw;
     height: 20%;
     background-color: rgb(33, 33, 39);
     font-size: smaller;
@@ -473,12 +472,9 @@ html body {
   html body footer .footer-container .footer-logo a {
     text-decoration: none;
   }
-  html body footer .footer-container .footer-logo a .img-mobile {
-    width: 90px;
-    height: 25px;
-  }
-  html body footer .footer-container .footer-logo a .img-desktop {
-    display: none;
+  html body footer .footer-container .footer-logo a img {
+    width: 95px;
+    height: auto;
   }
   html body footer .footer-container .separate {
     width: 3px;
@@ -856,8 +852,7 @@ html body {
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
-  html body main footer {
-    width: 100vw;
+  html body footer {
     height: 20%;
     background-color: rgb(33, 33, 39);
     font-size: smaller;
@@ -867,49 +862,47 @@ html body {
     margin-top: 2rem;
     padding: 0.3rem;
   }
-  html body main footer .footer-container {
+  html body footer .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
   }
-  html body main footer .footer-container .footer-logo {
+  html body footer .footer-container .footer-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0.6rem;
     padding-bottom: 0;
   }
-  html body main footer .footer-container .footer-logo a {
+  html body footer .footer-container .footer-logo a {
     text-decoration: none;
   }
-  html body main footer .footer-container .footer-logo a .img-mobile {
-    display: none;
+  html body footer .footer-container .footer-logo a img {
+    width: 150px;
+    height: auto;
   }
-  html body main footer .footer-container .footer-logo a img .img-desktop {
-    width: 500px;
-    height: 75px;
-  }
-  html body main footer .footer-container .separate {
+  html body footer .footer-container .separate {
     width: 3px;
     height: 66px;
     background-color: rgb(19, 18, 18);
     border-radius: 0.2rem;
   }
-  html body main footer .footer-container .mentions {
+  html body footer .footer-container .mentions {
     display: block;
   }
-  html body main footer .footer-container .mentions ul {
+  html body footer .footer-container .mentions ul {
     list-style: none;
     padding: 0.6rem;
     margin: 0;
   }
-  html body main footer .footer-container .mentions ul li a {
+  html body footer .footer-container .mentions ul li a {
     text-decoration: none;
     color: white;
   }
-  html body main footer .footer-container .contact-pama {
+  html body footer .footer-container .contact-pama {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -918,7 +911,7 @@ html body {
     padding-left: 0.5rem;
     margin: 0;
   }
-  html body main footer .footer-container .contact-pama a {
+  html body footer .footer-container .contact-pama a {
     text-decoration: none;
     text-align: center;
     color: var(--white);
