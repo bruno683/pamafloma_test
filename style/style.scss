@@ -161,7 +161,7 @@ html {
                     right: 0;
                     height: 300px;
                     width: 0vw;
-                    background-color: var(--bluedark);
+                    background-color: blue;
                     transform: translateX(0);
                     transition: all 0.4s ease-in-out;
 
@@ -239,7 +239,7 @@ html {
                     height: 300px;
                     width: 100vw;
                     transform: translateX(1);
-                    background-color: var(--bluedark);
+                    background-color: var(--lightBlue);
 
                     .menu-mobile {
                         width: 100%;

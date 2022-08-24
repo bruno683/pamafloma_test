@@ -139,7 +139,7 @@ html body {
     right: 0;
     height: 300px;
     width: 0vw;
-    background-color: var(--bluedark);
+    background-color: blue;
     transform: translateX(0);
     transition: all 0.4s ease-in-out;
   }
@@ -200,7 +200,7 @@ html body {
     height: 300px;
     width: 100vw;
     transform: translateX(1);
-    background-color: var(--bluedark);
+    background-color: var(--lightBlue);
   }
   html body nav .container-mobile.active .menu-mobile {
     width: 100%;

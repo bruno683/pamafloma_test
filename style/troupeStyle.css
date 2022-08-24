@@ -94,7 +94,7 @@
     padding: 0.5rem;
     background-color: rgb(76, 68, 122);
     border-radius: 2rem;
-    border: 3px solid rgb(94, 82, 160);
+    border: 3px solid rgb(159, 160, 82);
   }
   .wall-of-fame .photoDisplay img {
     max-height: 130px;
@@ -184,7 +184,7 @@
     align-items: center;
     flex-direction: column;
     width: 80%;
-    border: 10px solid rgb(13, 87, 148);
+    border: 10px solid rgb(148, 123, 13);
     border-radius: 2rem;
   }
   #troupe .wall-of-fame .photoDisplay {
@@ -199,5 +199,9 @@
     max-height: 144px;
     min-height: 126px;
     width: auto;
+    transition: all 0.4s ease-in-out;
+  }
+  #troupe .wall-of-fame .photoDisplay img:hover {
+    transform: scale(1.2);
   }
 }/*# sourceMappingURL=troupeStyle.css.map */
