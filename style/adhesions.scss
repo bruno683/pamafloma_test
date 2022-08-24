@@ -60,4 +60,46 @@
     }
 }
 
-@media screen and (min-width: 1401px) {}
+@media screen and (min-width: 1401px) {
+    .main-adhe {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        .section_adhe {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0.5rem;
+            margin: auto;
+            p{
+                text-align: justify;
+                width: 60%;
+                padding: 0.8rem 0 0.8rem 0;
+                font-family: 'Poppins', sans-serif;
+                font-size: small;
+            }
+            .img_adhe {
+                width: 50%;
+                a {
+                    text-decoration: none;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+
+
+        }
+
+        
+    }
+}
